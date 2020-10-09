@@ -67,6 +67,7 @@ class ShareScreenActivity : FlutterActivity() {
     fun onClickScreenSharing(view: View) {
 
         if (isClickShareScreen) {
+            mRtcEngine?.leaveChannel()
             startSharingScreen()
             isOpeningShareScreen = true
         } else {
@@ -86,6 +87,7 @@ class ShareScreenActivity : FlutterActivity() {
     }
 
     private fun startSharingScreen() {
+
         var channelName = "a"
 
 
