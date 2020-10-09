@@ -1,0 +1,49 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.agora.rtc.ss"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="18"
+8-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:6:5-79
+12-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:7:5-81
+13-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:7:22-78
+14
+15    <application>
+15-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:9:5-21:19
+16        <activity
+16-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:10:9-13:64
+17            android:name="io.agora.rtc.ss.impl.ScreenCapture$ScreenCaptureAssistantActivity"
+17-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:11:13-78
+18            android:process=":screensharingsvc"
+18-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:12:13-48
+19            android:theme="@android:style/Theme.Translucent" />
+19-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:13:13-61
+20
+21        <service
+21-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:14:9-20:19
+22            android:name="io.agora.rtc.ss.impl.ScreenSharingService"
+22-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:15:13-54
+23            android:process=":screensharingsvc" >
+23-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:16:13-48
+24            <intent-filter>
+24-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:17:13-19:29
+25                <action android:name="android.intent.action.screenshare" />
+25-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:18:17-76
+25-->/Users/monyneathmol/Documents/Mango-ByteProject/Research/Call_Chate_Share_Screen 2/screensharing/src/main/AndroidManifest.xml:18:25-73
+26            </intent-filter>
+27        </service>
+28    </application>
+29
+30</manifest>

@@ -1,14 +1,14 @@
 
 
-import 'package:flutter/services.dart';
+  import 'package:flutter/services.dart';
 
 
-class METHOD{
+  class METHOD{
   static const String shareScreen = 'shareScreen';
   static const String openCall = 'openCall';
-}
+  }
 
-class InvokeChannel{
+  class InvokeChannel{
   static const String _channel = 'test_activity';
 
   static const platform = const MethodChannel(_channel);
@@ -22,5 +22,5 @@ class InvokeChannel{
   }
 
 
-}
+  }
 
