@@ -337,7 +337,7 @@ class _CallScreenState extends State<CallScreen> {
         body: Stack(
           children: [_panel(),
             Container(
-              child: _users.length > 0 ?  RtcRemoteView.SurfaceView(uid: _users.first) : RtcLocalView.SurfaceView(),
+              child: _users.length > 0 ?  RtcRemoteView.SurfaceView(uid: _users.last) : RtcLocalView.SurfaceView(),
             ),
             Positioned(
               right: 10.0,

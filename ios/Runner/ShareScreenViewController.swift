@@ -25,7 +25,7 @@ class ShareScreenViewController: UIViewController {
             let systemBroadcastPicker = RPSystemBroadcastPickerView(frame: frame)
             systemBroadcastPicker.autoresizingMask = [.flexibleTopMargin, .flexibleRightMargin]
             
-            if let url = Bundle.main.url(forResource: "AgoraApp-Broadcast", withExtension: "appex", subdirectory: "PlugIns") {
+            if let url = Bundle.main.url(forResource: "Agora-Broadcast", withExtension: "appex", subdirectory: "PlugIns") {
                 if let bundle = Bundle(url: url) {
                     let button = UIButton()
                     systemBroadcastPicker.preferredExtension = bundle.bundleIdentifier

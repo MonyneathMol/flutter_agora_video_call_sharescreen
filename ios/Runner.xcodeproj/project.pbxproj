@@ -10,6 +10,20 @@
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
+		8E01E8CA2530153A0093ABDD /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E01E8C92530153A0093ABDD /* ReplayKit.framework */; };
+		8E01E8CD2530153A0093ABDD /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E8CC2530153A0093ABDD /* SampleHandler.swift */; };
+		8E01E8D42530153A0093ABDD /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E01E8C92530153A0093ABDD /* ReplayKit.framework */; };
+		8E01E8D62530153A0093ABDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E01E8D52530153A0093ABDD /* UIKit.framework */; };
+		8E01E8D92530153A0093ABDD /* BroadcastSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E8D82530153A0093ABDD /* BroadcastSetupViewController.swift */; };
+		8E01E8DD2530153A0093ABDD /* Agora-BroadcastSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8E01E8D32530153A0093ABDD /* Agora-BroadcastSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8E01E8E02530153A0093ABDD /* Agora-Broadcast.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8E01E8C82530153A0093ABDD /* Agora-Broadcast.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8E01E8F7253015980093ABDD /* libios_resampler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E01E8EE253015970093ABDD /* libios_resampler.a */; };
+		8E01E8F8253015980093ABDD /* AgoraAudioProcessing.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E8EF253015980093ABDD /* AgoraAudioProcessing.mm */; };
+		8E01E8F9253015980093ABDD /* AgoraAudioTube.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E8F2253015980093ABDD /* AgoraAudioTube.mm */; };
+		8E01E8FA253015980093ABDD /* AgoraUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E8F4253015980093ABDD /* AgoraUploader.swift */; };
+		8E01E9052530176A0093ABDD /* AgoraRtcKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E01E9042530176A0093ABDD /* AgoraRtcKit.framework */; };
+		8E01E90D253018BB0093ABDD /* KeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01E90C253018BB0093ABDD /* KeyCenter.swift */; };
+		8E01E92525301A350093ABDD /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E01E92425301A350093ABDD /* Accelerate.framework */; };
 		8EB50A5D252F69320075307B /* ShareScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB50A5C252F69320075307B /* ShareScreenViewController.swift */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
@@ -17,7 +31,36 @@
 		9F5AB47696A6C6DBE871314A /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AFA1B4407F0263620BE4813 /* Pods_Runner.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8E01E8DB2530153A0093ABDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E01E8D22530153A0093ABDD;
+			remoteInfo = "Agora-BroadcastSetupUI";
+		};
+		8E01E8DE2530153A0093ABDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E01E8C72530153A0093ABDD;
+			remoteInfo = "Agora-Broadcast";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		8E01E8E12530153A0093ABDD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8E01E8DD2530153A0093ABDD /* Agora-BroadcastSetupUI.appex in Embed App Extensions */,
+				8E01E8E02530153A0093ABDD /* Agora-Broadcast.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,6 +81,27 @@
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
+		8E01E8C82530153A0093ABDD /* Agora-Broadcast.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Agora-Broadcast.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E01E8C92530153A0093ABDD /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		8E01E8CC2530153A0093ABDD /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		8E01E8CE2530153A0093ABDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E01E8D32530153A0093ABDD /* Agora-BroadcastSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Agora-BroadcastSetupUI.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E01E8D52530153A0093ABDD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8E01E8D82530153A0093ABDD /* BroadcastSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSetupViewController.swift; sourceTree = "<group>"; };
+		8E01E8DA2530153A0093ABDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E01E8EC253015970093ABDD /* Agora-Broadcast-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Agora-Broadcast-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E01E8ED253015970093ABDD /* AgoraAudioCriticalSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraAudioCriticalSection.h; sourceTree = "<group>"; };
+		8E01E8EE253015970093ABDD /* libios_resampler.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libios_resampler.a; sourceTree = "<group>"; };
+		8E01E8EF253015980093ABDD /* AgoraAudioProcessing.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AgoraAudioProcessing.mm; sourceTree = "<group>"; };
+		8E01E8F0253015980093ABDD /* AgoraAudioProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraAudioProcessing.h; sourceTree = "<group>"; };
+		8E01E8F1253015980093ABDD /* AgoraAudioTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraAudioTube.h; sourceTree = "<group>"; };
+		8E01E8F2253015980093ABDD /* AgoraAudioTube.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AgoraAudioTube.mm; sourceTree = "<group>"; };
+		8E01E8F4253015980093ABDD /* AgoraUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgoraUploader.swift; sourceTree = "<group>"; };
+		8E01E8F5253015980093ABDD /* external_resampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = external_resampler.h; sourceTree = "<group>"; };
+		8E01E9042530176A0093ABDD /* AgoraRtcKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraRtcKit.framework; path = Pods/AgoraRtcEngine_iOS_Crypto/Agora_Native_SDK_for_iOS_FULL/libs/AgoraRtcKit.framework; sourceTree = "<group>"; };
+		8E01E9082530176E0093ABDD /* AgoraRtcCryptoLoader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraRtcCryptoLoader.framework; path = Pods/AgoraRtcEngine_iOS_Crypto/Agora_Native_SDK_for_iOS_FULL/libs/AgoraRtcCryptoLoader.framework; sourceTree = "<group>"; };
+		8E01E90C253018BB0093ABDD /* KeyCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCenter.swift; sourceTree = SOURCE_ROOT; };
+		8E01E92425301A350093ABDD /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		8EB50A5C252F69320075307B /* ShareScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareScreenViewController.swift; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
@@ -52,6 +116,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8E01E8C52530153A0093ABDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E01E9052530176A0093ABDD /* AgoraRtcKit.framework in Frameworks */,
+				8E01E92525301A350093ABDD /* Accelerate.framework in Frameworks */,
+				8E01E8CA2530153A0093ABDD /* ReplayKit.framework in Frameworks */,
+				8E01E8F7253015980093ABDD /* libios_resampler.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E01E8D02530153A0093ABDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E01E8D42530153A0093ABDD /* ReplayKit.framework in Frameworks */,
+				8E01E8D62530153A0093ABDD /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97C146EB1CF9000F007C117D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,6 +147,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E01E8CB2530153A0093ABDD /* Agora-Broadcast */ = {
+			isa = PBXGroup;
+			children = (
+				8E01E8ED253015970093ABDD /* AgoraAudioCriticalSection.h */,
+				8E01E8F0253015980093ABDD /* AgoraAudioProcessing.h */,
+				8E01E8EF253015980093ABDD /* AgoraAudioProcessing.mm */,
+				8E01E8F1253015980093ABDD /* AgoraAudioTube.h */,
+				8E01E8F2253015980093ABDD /* AgoraAudioTube.mm */,
+				8E01E8F4253015980093ABDD /* AgoraUploader.swift */,
+				8E01E8F5253015980093ABDD /* external_resampler.h */,
+				8E01E8EE253015970093ABDD /* libios_resampler.a */,
+				8E01E8CC2530153A0093ABDD /* SampleHandler.swift */,
+				8E01E8CE2530153A0093ABDD /* Info.plist */,
+				8E01E8EC253015970093ABDD /* Agora-Broadcast-Bridging-Header.h */,
+				8E01E90C253018BB0093ABDD /* KeyCenter.swift */,
+			);
+			path = "Agora-Broadcast";
+			sourceTree = "<group>";
+		};
+		8E01E8D72530153A0093ABDD /* Agora-BroadcastSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				8E01E8D82530153A0093ABDD /* BroadcastSetupViewController.swift */,
+				8E01E8DA2530153A0093ABDD /* Info.plist */,
+			);
+			path = "Agora-BroadcastSetupUI";
+			sourceTree = "<group>";
+		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +191,8 @@
 			children = (
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
+				8E01E8CB2530153A0093ABDD /* Agora-Broadcast */,
+				8E01E8D72530153A0093ABDD /* Agora-BroadcastSetupUI */,
 				97C146EF1CF9000F007C117D /* Products */,
 				CFD246F060F4CF963EFDC313 /* Pods */,
 				E227E067BD71A21F7A9916B7 /* Frameworks */,
@@ -89,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				97C146EE1CF9000F007C117D /* Runner.app */,
+				8E01E8C82530153A0093ABDD /* Agora-Broadcast.appex */,
+				8E01E8D32530153A0093ABDD /* Agora-BroadcastSetupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,7 +238,12 @@
 		E227E067BD71A21F7A9916B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8E01E92425301A350093ABDD /* Accelerate.framework */,
+				8E01E9082530176E0093ABDD /* AgoraRtcCryptoLoader.framework */,
 				9AFA1B4407F0263620BE4813 /* Pods_Runner.framework */,
+				8E01E9042530176A0093ABDD /* AgoraRtcKit.framework */,
+				8E01E8C92530153A0093ABDD /* ReplayKit.framework */,
+				8E01E8D52530153A0093ABDD /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,6 +251,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8E01E8C72530153A0093ABDD /* Agora-Broadcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E01E8E92530153A0093ABDD /* Build configuration list for PBXNativeTarget "Agora-Broadcast" */;
+			buildPhases = (
+				8E01E8C42530153A0093ABDD /* Sources */,
+				8E01E8C52530153A0093ABDD /* Frameworks */,
+				8E01E8C62530153A0093ABDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Agora-Broadcast";
+			productName = "Agora-Broadcast";
+			productReference = 8E01E8C82530153A0093ABDD /* Agora-Broadcast.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8E01E8D22530153A0093ABDD /* Agora-BroadcastSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E01E8E82530153A0093ABDD /* Build configuration list for PBXNativeTarget "Agora-BroadcastSetupUI" */;
+			buildPhases = (
+				8E01E8CF2530153A0093ABDD /* Sources */,
+				8E01E8D02530153A0093ABDD /* Frameworks */,
+				8E01E8D12530153A0093ABDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Agora-BroadcastSetupUI";
+			productName = "Agora-BroadcastSetupUI";
+			productReference = 8E01E8D32530153A0093ABDD /* Agora-BroadcastSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		97C146ED1CF9000F007C117D /* Runner */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
@@ -142,10 +297,13 @@
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				A16241DD9608DE55AEA1B7A6 /* [CP] Embed Pods Frameworks */,
+				8E01E8E12530153A0093ABDD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8E01E8DC2530153A0093ABDD /* PBXTargetDependency */,
+				8E01E8DF2530153A0093ABDD /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
@@ -158,9 +316,17 @@
 		97C146E61CF9000F007C117D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
+					8E01E8C72530153A0093ABDD = {
+						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
+					};
+					8E01E8D22530153A0093ABDD = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
 					97C146ED1CF9000F007C117D = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 1100;
@@ -181,11 +347,27 @@
 			projectRoot = "";
 			targets = (
 				97C146ED1CF9000F007C117D /* Runner */,
+				8E01E8C72530153A0093ABDD /* Agora-Broadcast */,
+				8E01E8D22530153A0093ABDD /* Agora-BroadcastSetupUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8E01E8C62530153A0093ABDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E01E8D12530153A0093ABDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97C146EC1CF9000F007C117D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,6 +452,26 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8E01E8C42530153A0093ABDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E01E90D253018BB0093ABDD /* KeyCenter.swift in Sources */,
+				8E01E8FA253015980093ABDD /* AgoraUploader.swift in Sources */,
+				8E01E8F9253015980093ABDD /* AgoraAudioTube.mm in Sources */,
+				8E01E8F8253015980093ABDD /* AgoraAudioProcessing.mm in Sources */,
+				8E01E8CD2530153A0093ABDD /* SampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E01E8CF2530153A0093ABDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E01E8D92530153A0093ABDD /* BroadcastSetupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97C146EA1CF9000F007C117D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +483,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E01E8DC2530153A0093ABDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E01E8D22530153A0093ABDD /* Agora-BroadcastSetupUI */;
+			targetProxy = 8E01E8DB2530153A0093ABDD /* PBXContainerItemProxy */;
+		};
+		8E01E8DF2530153A0093ABDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E01E8C72530153A0093ABDD /* Agora-Broadcast */;
+			targetProxy = 8E01E8DE2530153A0093ABDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		97C146FA1CF9000F007C117D /* Main.storyboard */ = {
@@ -356,6 +571,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -366,6 +582,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +596,210 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Profile;
+		};
+		8E01E8E22530153A0093ABDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFQC9VFRNF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/AgoraRtcEngine_iOS_Crypto/Agora_Native_SDK_for_iOS_FULL/libs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Agora-Broadcast/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Agora-Broadcast",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.agoraFlutterShare.Agora-Broadcast";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Agora-Broadcast/Agora-Broadcast-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E01E8E32530153A0093ABDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFQC9VFRNF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/AgoraRtcEngine_iOS_Crypto/Agora_Native_SDK_for_iOS_FULL/libs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Agora-Broadcast/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Agora-Broadcast",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.agoraFlutterShare.Agora-Broadcast";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Agora-Broadcast/Agora-Broadcast-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8E01E8E42530153A0093ABDD /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFQC9VFRNF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/AgoraRtcEngine_iOS_Crypto/Agora_Native_SDK_for_iOS_FULL/libs",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Agora-Broadcast/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Agora-Broadcast",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.agoraFlutterShare.Agora-Broadcast";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Agora-Broadcast/Agora-Broadcast-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile;
+		};
+		8E01E8E52530153A0093ABDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFQC9VFRNF;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Agora-BroadcastSetupUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.agoraFlutterShare.Agora-BroadcastSetupUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E01E8E62530153A0093ABDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFQC9VFRNF;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Agora-BroadcastSetupUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.agoraFlutterShare.Agora-BroadcastSetupUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8E01E8E72530153A0093ABDD /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KFQC9VFRNF;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Agora-BroadcastSetupUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.agoraFlutterShare.Agora-BroadcastSetupUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Profile;
 		};
@@ -493,6 +914,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -503,6 +925,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +947,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
@@ -534,6 +958,7 @@
 					"$(PROJECT_DIR)/Flutter",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -553,6 +978,26 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8E01E8E82530153A0093ABDD /* Build configuration list for PBXNativeTarget "Agora-BroadcastSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E01E8E52530153A0093ABDD /* Debug */,
+				8E01E8E62530153A0093ABDD /* Release */,
+				8E01E8E72530153A0093ABDD /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E01E8E92530153A0093ABDD /* Build configuration list for PBXNativeTarget "Agora-Broadcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E01E8E22530153A0093ABDD /* Debug */,
+				8E01E8E32530153A0093ABDD /* Release */,
+				8E01E8E42530153A0093ABDD /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
